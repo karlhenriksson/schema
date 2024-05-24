@@ -1,0 +1,79 @@
+
+* {
+  box-sizing: border-box;
+}
+
+#fullSchedule {
+  display: flex;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#weekHolder {
+  width: 600px;
+  height: 700px;
+
+  display: flex;
+}
+#weekHolder > div {
+  flex: 1;
+  border: 1px black solid;
+  background-color: #CFCACE;
+}
+.day {
+  position: relative;
+}
+
+.lesson {
+  border-top: 1px black solid;
+  border-bottom: 1px black solid;
+  position: absolute;
+
+  padding-left: 3px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: inherit;
+}
+.timeIndicator {
+  background-color: lightgray;
+  font-size: xx-small;
+  position: absolute;
+  transform: translate(0px, -50%);
+  z-index: 1;
+  color: black;
+}
+.roomIndicator {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 4px;
+
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  color: inherit;
+}
+
+.dayName {
+  text-align: center;
+  border-bottom: solid 1px black;
+  background-color: white;
+  padding: 5px;
+}
+
+.timeline {
+  width: 40px;
+  border: 1px black solid;
+  border-top: unset;
+
+  display: flex;
+  flex-direction: column;
+  margin-top: 29px;
+}
+.timelineEntry {
+  flex: 1;
+  border-top: 1px black solid;
+  font-size: smaller;
+  text-align: center;
+}
