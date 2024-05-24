@@ -36,7 +36,7 @@
   color: inherit;
 }
 .timeIndicator {
-  background-color: lightgray;
+  background-color: #CFCACE;
   font-size: xx-small;
   position: absolute;
   transform: translate(0px, -50%);
