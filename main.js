@@ -166,13 +166,13 @@ const schedule = {
   ],
 };
 const colors = {
-  "Svenska 2": { bg: "#FFFFAA" },
+  "Svenska 2": { bg: "#FFFFCD" },
   "Fysik 1a": { bg: "#016531", text: "#E6F9F3" },
   "Kemi 2": { bg: "#CF3501", text: "#FFE537" },
   Lunch: { bg: "#BEBEBE" },
-  "Matematik 5": { bg: "#7331DE" },
-  "Engelska 6": { bg: "red" },
-  "Idrott och hälsa 1": { bg: "#EEFF43" },
+  "Matematik 5": { bg: "#8381FF" },
+  "Engelska 6": { bg: "#FF0000" },
+  "Idrott och hälsa 1": { bg: "#FFFF83" },
 };
 
 function timeToHour(arr) {
