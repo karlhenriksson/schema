@@ -239,7 +239,6 @@ for (const [day, lessons] of Object.entries(schedule)) {
     // Should the program add a line break?
     const addLineBreak = lessonHeight > 30;
 
-    console.log();
     // Dynamic font size
     const fontSize = Math.min(
       // Width-based
@@ -257,7 +256,6 @@ for (const [day, lessons] of Object.entries(schedule)) {
       // Maximum size
       window.innerWidth < 800 ? 16 : 20
     );
-    console.log(`Font size for lesson ${lesson.name}: ${fontSize}px`);
 
     // Create an element for the lesson:
 
