@@ -10,7 +10,7 @@
 
 #weekHolder {
   width: 600px;
-  height: 700px;
+  height: 500px;
 
   display: flex;
 }
@@ -19,6 +19,12 @@
   border: 1px black solid;
   background-color: #CFCACE;
 }
+@media screen and (min-width: 800px) {
+  #weekHolder {
+    height: 700px;
+  }
+}
+
 .day {
   position: relative;
 }
@@ -29,6 +35,7 @@
   position: absolute;
 
   padding-left: 3px;
+  text-wrap:break-word;
   
   display: flex;
   flex-direction: column;
@@ -36,7 +43,7 @@
   color: inherit;
 }
 .timeIndicator {
-  background-color: #CFCACE;
+  background-color: lightgray;
   font-size: xx-small;
   position: absolute;
   transform: translate(0px, -50%);

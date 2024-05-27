@@ -166,13 +166,13 @@ const schedule = {
   ],
 };
 const colors = {
-  "Svenska 2": { bg: "#FFFFCD" },
+  "Svenska 2": { bg: "#FFFFAA" },
   "Fysik 1a": { bg: "#016531", text: "#E6F9F3" },
   "Kemi 2": { bg: "#CF3501", text: "#FFE537" },
   Lunch: { bg: "#BEBEBE" },
-  "Matematik 5": { bg: "#8381FF" },
-  "Engelska 6": { bg: "#FF0000" },
-  "Idrott och hälsa 1": { bg: "#FFFF83" },
+  "Matematik 5": { bg: "#7331DE" },
+  "Engelska 6": { bg: "red" },
+  "Idrott och hälsa 1": { bg: "#EEFF43" },
 };
 
 function timeToHour(arr) {
@@ -182,6 +182,9 @@ function timeToHour(arr) {
 // Set sonme constants:
 
 const weekHolder = document.getElementById("weekHolder");
+const textMeasureCanvas = document.createElement("canvas");
+const ctx = textMeasureCanvas.getContext("2d");
+ctx.font = "6px Segoe UI";
 
 // What time is the earliest/latest time to show?
 let dayStart = Infinity,
@@ -201,9 +204,6 @@ const hourHeight = weekHolder.clientHeight / (dayEnd - dayStart);
 // Width of lesson elements in px
 const lessonWidth = weekHolder.offsetWidth;
 console.log(lessonWidth);
-
-// Add time indicators on the left and right
-console.log("TODO: Add time indicators");
 
 // Add time indicators to the side timelines:
 // For all days...
@@ -237,11 +237,27 @@ for (const [day, lessons] of Object.entries(schedule)) {
     const lessonHeight = duration * hourHeight;
 
     // Should the program add a line break?
-    const addLineBreak = lessonHeight > 40;
+    const addLineBreak = lessonHeight > 30;
+
+    console.log();
     // Dynamic font size
-    const fontSize = addLineBreak
-      ? Math.min(16, lessonHeight - 10)
-      : Math.max(8, Math.min(12, lessonHeight - 10));
+    const fontSize = Math.min(
+      // Width-based
+      (lessonWidth - 6) /
+        (addLineBreak
+          ? Math.max(
+              ctx.measureText(lesson.name).width,
+              ctx.measureText(lesson.teacher + " " + lesson.room).width
+            )
+          : ctx.measureText(
+              `${lesson.name} ${lesson.teacher ?? ""} ${lesson.room ?? ""}`
+            ).width),
+      // Height-based
+      (lessonHeight - 10) / (addLineBreak ? 2 : 1),
+      // Maximum size
+      window.innerWidth < 800 ? 16 : 20
+    );
+    console.log(`Font size for lesson ${lesson.name}: ${fontSize}px`);
 
     // Create an element for the lesson:
 
