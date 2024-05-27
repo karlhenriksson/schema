@@ -179,10 +179,10 @@ for (const [, lessons] of Object.entries(schedule)) {
   }
 }
 dayStart = Math.floor(dayStart - 1 / 6);
-dayEnd = Math.ceil(dayEnd + 7 / 6);
+dayEnd = Math.ceil(dayEnd + 1 / 6);
 
 // Height of an hour in pixels
-const hourHeight = weekHolder.clientHeight / (dayEnd - dayStart);
+const hourHeight = (weekHolder.clientHeight - 30) / (dayEnd - dayStart);
 
 // Width of lesson elements in px
 const lessonWidth = weekHolder.offsetWidth;
@@ -191,7 +191,8 @@ const lessonWidth = weekHolder.offsetWidth;
 // For all days...
 for (const el of document.getElementsByClassName("timeline")) {
   // Add markers every 30 minutes
-  for (let h = dayStart; h < dayEnd - 0.5; h += 0.5) {
+  const incr = hourHeight < 50 ? 1 : 0.5;
+  for (let h = dayStart; h < dayEnd; h += incr) {
     const div = document.createElement("div");
     div.classList = "timelineEntry";
     div.style.top = hourHeight * (h - dayStart) + "px";
