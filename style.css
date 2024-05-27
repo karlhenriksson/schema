@@ -67,19 +67,21 @@
 }
 
 .timeline {
-  width: 40px;
+  width: 25px;
   border: 1px black solid;
   border-top: unset;
 
-  display: flex;
   flex-direction: column;
   margin-top: 30px;
+  position: relative;
 }
 .timelineEntry {
-  flex: 1;
   border-top: 1px black solid;
-  font-size: smaller;
+  font-size: 10px;
   text-align: center;
+  width: 100%;
+
+  position: absolute;
 }
 
 @media screen and (min-width: 800px) {
@@ -89,5 +91,11 @@
 
   .dayName {
     font-size: normal;
+  }
+  .timeline {
+    width: 40px;
+  }
+  .timelineEntry {
+    font-size: smaller;
   }
 }

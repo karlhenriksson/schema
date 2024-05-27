@@ -186,7 +186,6 @@ const hourHeight = weekHolder.clientHeight / (dayEnd - dayStart);
 
 // Width of lesson elements in px
 const lessonWidth = weekHolder.offsetWidth;
-console.log(lessonWidth);
 
 // Add time indicators to the side timelines:
 // For all days...
@@ -195,6 +194,7 @@ for (const el of document.getElementsByClassName("timeline")) {
   for (let h = dayStart; h < dayEnd - 0.5; h += 0.5) {
     const div = document.createElement("div");
     div.classList = "timelineEntry";
+    div.style.top = hourHeight * (h - dayStart) + "px";
     div.innerText = Math.floor(h) + ":" + (h % 1 ? "30" : "00");
     el.appendChild(div);
   }
