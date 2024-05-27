@@ -243,22 +243,25 @@ for (const [day, lessons] of Object.entries(schedule)) {
     // Should the program add a line break?
     const addLineBreak = lessonHeight > 30;
 
+    console.log();
     // Dynamic font size
     const fontSize = Math.min(
       // Width-based
-      (lessonWidth - 6) /
+      (lessonWidth - 7) /
         (addLineBreak
           ? Math.max(
               ctx.measureText(lesson.name).width,
-              ctx.measureText(lesson.teacher + " " + lesson.room).width
+              ctx.measureText(
+                (lesson.teacher ?? "") + " " + (lesson.room ?? "")
+              ).width
             )
           : ctx.measureText(
               `${lesson.name} ${lesson.teacher ?? ""} ${lesson.room ?? ""}`
             ).width),
       // Height-based
-      (lessonHeight - 10) / (addLineBreak ? 2 : 1),
+      (lessonHeight - 6) / (addLineBreak ? 3 : 2),
       // Maximum size
-      window.innerWidth < 800 ? 16 : 20
+      window.innerWidth < 800 ? 12 : 20
     );
 
     // Create an element for the lesson:
