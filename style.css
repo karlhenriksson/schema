@@ -67,7 +67,7 @@
 }
 
 .timeline {
-  width: 25px;
+  width: 40px;
   border: 1px black solid;
   border-top: unset;
 
@@ -91,9 +91,6 @@
 
   .dayName {
     font-size: normal;
-  }
-  .timeline {
-    width: 40px;
   }
   .timelineEntry {
     font-size: smaller;
