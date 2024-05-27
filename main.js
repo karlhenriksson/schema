@@ -213,7 +213,7 @@ console.log(lessonWidth);
 // For all days...
 for (const el of document.getElementsByClassName("timeline")) {
   // Add markers every 30 minutes
-  for (let h = dayStart; h < dayEnd - 1; h += 0.5) {
+  for (let h = dayStart; h < dayEnd - 0.5; h += 0.5) {
     const div = document.createElement("div");
     div.classList = "timelineEntry";
     div.innerText = Math.floor(h) + ":" + (h % 1 ? "30" : "00");
@@ -261,7 +261,7 @@ for (const [day, lessons] of Object.entries(schedule)) {
       // Height-based
       (lessonHeight - 6) / (addLineBreak ? 3 : 2),
       // Maximum size
-      window.innerWidth < 800 ? 12 : 20
+      window.innerWidth < 800 ? 12 : 18
     );
 
     // Create an element for the lesson:
