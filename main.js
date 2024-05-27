@@ -2,13 +2,6 @@
 const schedule = {
   mon: [
     {
-      name: "Svenska 2",
-      teacher: "LE",
-      room: "32",
-      start: [8, 30],
-      end: [9, 45],
-    },
-    {
       name: "Fysik 1a",
       teacher: "MSG",
       room: "1306",
@@ -124,23 +117,9 @@ const schedule = {
       start: [13, 20],
       end: [14, 30],
     },
-    {
-      name: "Svenska 2",
-      teacher: "LE",
-      room: "35",
-      start: [14, 55],
-      end: [16, 25],
-    },
   ],
   fri: [
     { name: "Tyska 4", teacher: "LLT", room: 34, start: [8, 30], end: [10, 0] },
-    {
-      name: "Svenska 2",
-      teacher: "LE",
-      room: "36",
-      start: [10, 10],
-      end: [11, 0],
-    },
     {
       name: "Matematik 5",
       teacher: "NZG",
