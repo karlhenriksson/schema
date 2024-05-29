@@ -40,13 +40,6 @@ const schedule = {
   ],
   tue: [
     {
-      name: "Programmering 1",
-      teacher: "PLN",
-      room: "1302",
-      start: [8, 30],
-      end: [9, 50],
-    },
-    {
       name: "Matematik 5",
       teacher: "NZG",
       room: "403",
@@ -134,13 +127,6 @@ const schedule = {
       room: "39",
       start: [13, 0],
       end: [14, 50],
-    },
-    {
-      name: "Programmering 1",
-      teacher: "PLN",
-      room: "1307",
-      start: [15, 0],
-      end: [16, 30],
     },
   ],
 };
