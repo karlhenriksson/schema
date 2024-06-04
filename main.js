@@ -30,13 +30,6 @@ const schedule = {
       start: [14, 5],
       end: [15, 5],
     },
-    {
-      name: "Tyska 4",
-      teacher: "LLT",
-      room: "34",
-      start: [15, 15],
-      end: [16, 30],
-    },
   ],
   tue: [
     {
@@ -45,13 +38,6 @@ const schedule = {
       room: "403",
       start: [10, 0],
       end: [11, 0],
-    },
-    {
-      name: "Idrott och hälsa 1",
-      teacher: "AAN",
-      room: "Idh",
-      start: [11, 30],
-      end: [12, 50],
     },
     { name: "Lunch", room: "Vasaköket", start: [12, 50], end: [13, 30] },
     {
@@ -103,16 +89,8 @@ const schedule = {
       end: [11, 10],
     },
     { name: "Lunch", room: "Vasaköket", start: [11, 35], end: [12, 15] },
-    {
-      name: "Idrott och hälsa 1",
-      teacher: "AAN",
-      room: "Idh",
-      start: [13, 20],
-      end: [14, 30],
-    },
   ],
   fri: [
-    { name: "Tyska 4", teacher: "LLT", room: 34, start: [8, 30], end: [10, 0] },
     {
       name: "Matematik 5",
       teacher: "NZG",
