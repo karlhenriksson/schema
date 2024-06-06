@@ -4,15 +4,16 @@
 }
 
 #fullSchedule {
+  width: 600px;
+  height: 500px;
   display: flex;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #weekHolder {
-  width: 600px;
-  height: 500px;
-
+  flex: 1;
   display: flex;
+  background-color: #CFCACE;
 }
 #weekHolder > div {
   flex: 1;
@@ -39,7 +40,7 @@
 }
 .timeIndicator {
   background-color: lightgray;
-  font-size: xx-small;
+  font-size: 8px;
   position: absolute;
   transform: translate(0px, -50%);
   z-index: 1;
@@ -77,22 +78,18 @@
 }
 .timelineEntry {
   border-top: 1px black solid;
-  font-size: 10px;
   text-align: center;
-  width: 100%;
 
   position: absolute;
+  width: 100%;
 }
 
 @media screen and (min-width: 800px) {
-  #weekHolder {
-    height: 550px;
-  }
 
   .dayName {
     font-size: normal;
   }
-  .timelineEntry {
-    font-size: smaller;
+  .timeIndicator {
+    font-size: xx-small;
   }
 }
