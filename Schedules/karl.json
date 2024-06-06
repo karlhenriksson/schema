@@ -1,0 +1,156 @@
+{
+  "schedule" : {
+    "Måndag": [
+      {
+        "name": "Testlektion",
+        "room": -41,
+        "start": [8, 30],
+        "end": [9, 30],
+        "channel": [2,1]
+      },
+      {
+        "name": "Fysik 1a",
+        "teacher": "MSG",
+        "room": "1306",
+        "start": [9, 55],
+        "end": [10, 55]
+      },
+      {
+        "name": "Kemi 2",
+        "teacher": "TFD",
+        "room": "1502",
+        "start": [11, 5],
+        "end": [11, 55]
+      },
+      {
+        "name": "Lunch",
+        "room": "Vasaköket",
+        "start": [12, 0],
+        "end": [12, 40]
+      },
+      {
+        "name": "Matematik 5",
+        "teacher": "NZG",
+        "room": "403",
+        "start": [12, 45],
+        "end": [13, 55]
+      },
+      {
+        "name": "Engelska 6",
+        "teacher": "MEN",
+        "room": "403",
+        "start": [14, 5],
+        "end": [15, 5]
+      }
+    ],
+    "Tisdag": [
+      {
+        "name": "Matematik 5",
+        "teacher": "NZG",
+        "room": "403",
+        "start": [10, 0],
+        "end": [11, 0]
+      },
+      {
+        "name": "Lunch",
+        "room": "Vasaköket",
+        "start": [12, 50],
+        "end": [13, 30]
+      },
+      {
+        "name": "Mentorstid",
+        "teacher": "LE,TFD",
+        "room": "37",
+        "start": [14, 0],
+        "end": [14, 20]
+      }
+    ],
+    "Onsdag": [
+      {
+        "name": "Matematik 5",
+        "teacher": "NZG",
+        "room": "102",
+        "start": [8, 30],
+        "end": [9, 30]
+      },
+      {
+        "name": "Matematik 5",
+        "teacher": "NZG",
+        "room": "102",
+        "start": [9, 40],
+        "end": [10, 40]
+      },
+      {
+        "name": "Fysik 1a",
+        "teacher": "MSG",
+        "room": "1306",
+        "start": [10, 50],
+        "end": [12, 0]
+      },
+      {
+        "name": "Lunch",
+        "room": "Vasaköket",
+        "start": [12, 10],
+        "end": [12, 50]
+      },
+      {
+        "name": "Kemi 2",
+        "room": "1502",
+        "teacher": "TFD",
+        "start": [13, 0],
+        "end": [13, 55]
+      },
+      {
+        "name": "Resurstid med stöd",
+        "start": [14, 10],
+        "end": [14, 50]
+      }
+    ],
+    "Torsdag": [
+      {
+        "name": "Matematik 5",
+        "room": "403",
+        "teacher": "NZG",
+        "start": [10, 10],
+        "end": [11, 10]
+      },
+      {
+        "name": "Lunch",
+        "room": "Vasaköket",
+        "start": [11, 35],
+        "end": [12, 15]
+      }
+    ],
+    "Fredag": [
+      {
+        "name": "Matematik 5",
+        "teacher": "NZG",
+        "room": "403",
+        "start": [11, 10],
+        "end": [12, 10]
+      },
+      { 
+        "name": "Lunch",
+        "room": "Vasaköket",
+        "start": [12, 15],
+        "end": [12, 55]
+      },
+      {
+        "name": "Engelska 6",
+        "teacher": "MEN",
+        "room": "39",
+        "start": [13, 0],
+        "end": [14, 50]
+      }
+    ]
+  },
+  "colors" : {
+    "Svenska 2": { "bg": "#FFFFCD" },
+    "Fysik 1a": { "bg": "#016531", "text": "#E6F9F3" },
+    "Kemi 2": { "bg": "#CF3501", "text": "#FFE537" },
+    "Lunch": { "bg": "#BEBEBE" },
+    "Matematik 5": { "bg": "#8381FF" },
+    "Engelska 6": { "bg": "#FF0000" },
+    "Idrott och hälsa 1": { "bg": "#FFFF83" }
+  }
+}
