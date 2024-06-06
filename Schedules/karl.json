@@ -2,13 +2,6 @@
   "schedule" : {
     "Måndag": [
       {
-        "name": "Testlektion",
-        "room": -41,
-        "start": [8, 30],
-        "end": [9, 30],
-        "channel": [2,1]
-      },
-      {
         "name": "Fysik 1a",
         "teacher": "MSG",
         "room": "1306",
