@@ -4,8 +4,8 @@
 }
 
 #fullSchedule {
-  width: 600px;
-  height: 500px;
+  width: 100%;
+  aspect-ratio: 0.8;
   display: flex;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -85,6 +85,11 @@
 }
 
 @media screen and (min-width: 800px) {
+
+  #fullSchedule {
+    width: 600px;
+    height: 500px;
+  }
 
   .dayName {
     font-size: normal;

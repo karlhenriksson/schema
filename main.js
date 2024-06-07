@@ -3,14 +3,13 @@
 // Set some constants:
 
 const weekHolder = document.getElementById("weekHolder");
-console.log(weekHolder.clientHeight);
 const textMeasureCanvas = document.createElement("canvas");
 const ctx = textMeasureCanvas.getContext("2d");
 const dayTemplate = document.getElementById("dayTemplate");
 ctx.font = "6px Segoe UI";
 
 // Convert HH/MM times to HH only
-// IN: [(int) h, (int) min]   OUT: (float) h
+// IN: [(int) h, (int) m]   OUT: (float) h
 function timeToHour(arr) {
   return arr[0] + arr[1] / 60;
 }
@@ -110,7 +109,7 @@ function loadSchedule(schedule, colors) {
         // Height-based
         (lessonHeight - 6) / (addLineBreak ? 3 : 2),
         // Maximum size
-        window.innerWidth < 800 ? 12 : 18
+        window.innerWidth < 800 ? 18 : 15
       );
 
       // Create an element for the lesson:
