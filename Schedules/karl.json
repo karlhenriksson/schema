@@ -139,11 +139,11 @@
         "end": [12, 15]
       },
       {
-        "name": "Svenska 3",
-        "room": "26",
-        "teacher": "LE",
-        "start": [10, 5],
-        "end": [11, 30]
+        "name": "Matematik - spec",
+        "room": "403",
+        "teacher": "NZG",
+        "start": [12, 30],
+        "end": [13, 50]
       },
       {
         "name": "Historia 1b",
@@ -188,7 +188,7 @@
     "Fysik 2": { "bg": "#016531", "text": "#E6F9F3" },
     "Kemi 2": { "bg": "#CF3501", "text": "#FFE537" },
     "Lunch": { "bg": "#BEBEBE" },
-    "Matematik spec": { "bg": "#8381FF" },
+    "Matematik - spec": { "bg": "#8381FF" },
     "Biologi 2": { "bg": "#66AF00" }
   }
 }
